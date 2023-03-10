@@ -1,3 +1,15 @@
-body {
-    background-color: #BCAA95;
+@font-face {
+    font-family: "Dream Avenue";
+    src: local(Dream Avenue), url(../imgs/Dream\ Avenue\ .otf);
+    font-weight: 80px;
 }
+
+body{
+    background-color: #BCAA95;
+
+}
+
+h1 {    font-family: "Dream Avenue";
+        color: #fff;
+}
+
