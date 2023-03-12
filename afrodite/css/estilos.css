@@ -4,12 +4,44 @@
     font-weight: 80px;
 }
 
+@font-face {
+    font-family: "Dm Sans";
+    src: local(Dm Sans), url(../imgs/DMSans-Medium.ttf);
+}
+
+h1 {    
+    font-family: "Dream Avenue", sans-serif;
+    color: #fff;
+}
+
+.nav-item {
+    padding-right: 30px;
+    font-family: "Dm Sans", Arial;
+}
+
+.navbar-brand {
+    padding-left: 20px !important;
+}
+  
+.navbar {
+    position:static;
+    background: rgba(255, 255, 255, 0.25) !important; 
+    top: 0;
+    right: 0;
+    left: 0;
+}
+  
+.nav-link:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #624e39;
+    border-width: 3px;
+}
+  
+.d-flex {
+    padding-right: 40px !important;
+}
+
 body{
     background-color: #BCAA95;
 
 }
-
-h1 {    font-family: "Dream Avenue";
-        color: #fff;
-}
-
