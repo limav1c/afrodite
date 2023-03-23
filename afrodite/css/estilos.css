@@ -45,3 +45,34 @@ body{
     background-color: #BCAA95;
 
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    position: relative;
+   }
+
+#image {
+    position: absolute;
+}
+
+#texto {
+    position: absolute;
+    padding-top: 23%;
+    font-size: 75px;
+    font-family: "Dream Avenue", sans-serif;
+    color: #fff;
+  }
+
+.texto{
+    padding-top: 37%;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+    line-height: 1.8;
+    font-family: "Dm Sans", Arial;
+    color: #fff;
+}
