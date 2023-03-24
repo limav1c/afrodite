@@ -55,23 +55,23 @@ body{
 
 #image {
     position: absolute;
-    width: 74%;
+    width: 80%;
 }
 
 #texto {
     position: absolute;
-    padding-top: 23%;
+    padding-top: 28%;
     font-size: 75px;
     font-family: "Dream Avenue", sans-serif;
     color: #fff;
   }
 
 .texto{
-    padding-top: 37%;
+    padding-top: 40%;
     font-size: 18px;
     letter-spacing: 5px;
     text-decoration: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
     padding-bottom: 6px;
     line-height: 1.8;
     font-family: "Dm Sans", Arial;
