@@ -61,7 +61,7 @@ body{
 #texto {
     position: absolute;
     padding-top: 28%;
-    font-size: 75px;
+    ffont-size: max(16px, 5vw);
     font-family: "Dream Avenue", sans-serif;
     color: #fff;
   }
@@ -71,9 +71,14 @@ body{
     font-size: 18px;
     letter-spacing: 5px;
     text-decoration: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2.9px solid #fff;
     padding-bottom: 6px;
     line-height: 1.8;
     font-family: "Dm Sans", Arial;
     color: #fff;
+}
+
+.texto:hover {
+    color: #624e39;
+    border-color: #624e39;
 }
