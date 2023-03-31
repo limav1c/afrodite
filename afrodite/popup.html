@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pop up</title>
+    <style>
+        .popup{
+            position: fixed;
+            top: 0; bottom:0;
+            left: 0; right: 0;
+            margin:auto;
+            width: 300px;
+            height: 180px;
+            padding: 15px;
+            border: solid 1px red;
+            background: #ddd;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function abrir() {
+            document.getElementById('popup').style.display = 'block';
+        }
+        function fechar(){
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <p>oi</p>
+    </div>
+
+    <a href="javascript: abrir()">abrir</a>
+    <br>
+    <a href="javascript: fechar()">fechar</a>
+
+    <a href="a" onMouseOver="abrir();" onmouseout="fechar();">Passar</a>
+</body>
+</html>
