@@ -77,3 +77,21 @@ body{
     font-family: "Dm Sans", Arial;
     color: #fff;
 }
+.menu {
+    background-color: white;
+    font-family: "Dm Sans", Arial;
+    padding: 8px;
+    text-align: center;
+    
+}
+a{
+    color: #826F5A;
+    text-decoration: none;
+    font-family: "Dm Sans", Arial;
+    padding: 25px;
+}
+nav > a:hover{
+    background-color: #826F5A;
+    color: white;
+    padding: 8px;
+}
