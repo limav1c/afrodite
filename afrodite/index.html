@@ -11,6 +11,14 @@
     <link href="css/estilos.css" rel="stylesheet">
     <link href="css/responsivo.css" rel="stylesheet">
 
+    <script type="text/javascript">
+    function abrir() {
+        document.getElementById('caixa').style.display = 'block';
+    }
+    function fechar(){
+        document.getElementById('caixa').style.display = 'none';
+    }
+  </script>
 
 </head>
 <body>
@@ -53,7 +61,14 @@
       <div class="container">
       <img id="image" src="imgs/fotoinicial.jpg" title="foto inicial">
       <label id="texto">AFRODITE BAZAR</label>
-      <a class="texto" href="#" >Bazar beneficente. doe e receba.</a>
+          
+      <a href="#" onclick="abrir()" onmouseover="fechar();" class="texto">Bazar beneficente. doe e receba.</a>
+      
+      <div id="caixa" class="caixa">
+        <p class="c1"> Deseja doar? Mande um email para nós!</p>
+        <a class="c2" href="mailto:afroditebazar@gmail.com">afroditebazar@gmail.com</p>
+      </div>
+      </div>
       </div>
 </body>
 </html>
