@@ -18,6 +18,17 @@ h1 {
     margin-top: 0px;
 }
 
+.oval {
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 50%;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    padding: 15px;
+    float: left;
+}
+
 .nav-item {
     padding-right: 30px;
     font-family: "Dm Sans", Arial;
@@ -99,14 +110,4 @@ nav > a:hover{
     background-color: #826F5A;
     color: white;
     padding: 8px;
-}
-.oval {
-    background-color: transparent;
-    border: solid white 2px;
-    border-radius: 50%;
-    width: 150px;
-    height: 60px;
-    margin: 10px;
-    padding: 15px;
-    float: left;
 }
