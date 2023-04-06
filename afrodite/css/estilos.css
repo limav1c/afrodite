@@ -76,7 +76,7 @@ body{
 #texto {
     position: absolute;
     padding-top: 28%;
-    font-size: max(73px, 5vw);
+    font-size: max(16px, 5vw);
     font-family: "Dream Avenue", sans-serif;
     color: #fff;
   }
@@ -98,3 +98,35 @@ body{
     border-color: #624e39;
 }
 
+.caixa {
+    position: fixed;
+    top: 0; bottom:0;
+    left: 0; right: 0;
+    margin:auto;
+    width: 270px;
+    height: 180px;
+    padding: 15px;
+    margin-top: 26%;
+    border-radius: 5%;
+    background: #BCAA95;
+    display: none;
+}
+
+.c1{
+    color: #fff;
+    font-family: "Dm Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.c2 {
+    color:#624e39;
+    font-family: "Dm Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.c2:hover{
+    color: #3a2e21;
+}
