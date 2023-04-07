@@ -47,13 +47,34 @@ h1 {
 }
   
 .nav-link:hover {
-    border-bottom-style: solid;
-    border-bottom-color: #624e39;
-    border-width: 3px;
+    color: #624e39  !important;
 }
   
 .d-flex {
     padding-right: 40px !important;
+}
+
+.nav-link.active.um:hover {
+    content: url('../imgs/pessoa2.png');
+}
+
+.nav-link.active.dois:hover {
+    content: url('../imgs/carrinho2.png');
+}
+
+.dropdown-menu {
+    background-color: #BCAA95;
+    border-color: #BCAA95;
+}
+
+.dropdown-item {
+    font-family: "Dm Sans", arial;
+    color:#fff;
+}
+
+.dropdown-item:hover {
+    background-color: #BCAA95;
+    color: #3a2e21;
 }
 
 body{
@@ -87,7 +108,7 @@ body{
     letter-spacing: 5px;
     text-decoration: none;
     border-bottom: 2.9px solid #fff;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
     line-height: 1.8;
     font-family: "Dm Sans", Arial;
     color: #fff;
@@ -95,7 +116,6 @@ body{
 
 .texto:hover {
     color: #624e39;
-    border-color: #624e39;
 }
 
 .caixa {
