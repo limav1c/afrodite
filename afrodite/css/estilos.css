@@ -59,7 +59,7 @@ h1 {
 }
 
 .nav-link.active.dois:hover {
-    content: url('../imgs/carrinho2.png');
+    content: url('../imgs/');
 }
 
 .dropdown-menu {
@@ -119,21 +119,21 @@ body{
 }
 
 .caixa {
-    position: fixed;
+    position: absolute;
     top: 0; bottom:0;
     left: 0; right: 0;
     margin:auto;
     width: 270px;
     height: 180px;
     padding: 15px;
-    margin-top: 26%;
+    margin-top: 25%;
     border-radius: 5%;
-    background: #BCAA95;
+    background: #F1EEEB;
     display: none;
 }
 
 .c1{
-    color: #fff;
+    color: #362b1f;
     font-family: "Dm Sans", sans-serif;
     font-size: 18px;
     letter-spacing: 5px;
@@ -141,12 +141,12 @@ body{
 }
 
 .c2 {
-    color:#624e39;
-    font-family: "Dm Sans", sans-serif;
+    color: #856c52;
     font-size: 18px;
-    text-align: center;
+    text-decoration: none;
+
 }
 
 .c2:hover{
-    color: #3a2e21;
+    color: #624e39;
 }
