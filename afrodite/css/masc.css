@@ -92,12 +92,13 @@ body{
 #image {
     position: absolute;
     width: 74%;
+    opacity: 0.8;
 }
 
 #texto {
     position: absolute;
-    padding-top: 23%;
-    font-size: 75px;
+    padding-top: 4%;
+    font-size: max(10px, 5vw);
     font-family: "Dream Avenue", sans-serif;
     color: #fff;
   }
@@ -113,57 +114,22 @@ body{
     font-family: "Dm Sans", Arial;
     color: #fff;
 }
-
-.texto:hover {
-    color: #624e39;
+.menu {
+    background-color: white;
+    font-family: "Dm Sans", Arial;
+    padding: 8px;
+    text-align: center;
+    
 }
-
-
-.form{
-    width: 400px;
-    margin: auto;
-    padding-top: 40px;
-    font-family: "Popins", Arial;
+a{
+    color: #826F5A;
+    text-decoration: none;
+    font-family: "Dm Sans", Arial;
+    padding: 25px;
 }
-.card{
-    background-color: transparent;
-    padding: 30px;
-    border: none;
-  
-}
-.card-group{
-    margin-bottom: 15px;
-    border: none;
-}
-.card-group > button{
-    width: 100%;
-    background-color:#826F5A;
-    padding: 15px;
+nav > a:hover{
+    background-color: #826F5A;
     color: white;
-    border: 0px;
-    outline: 0;
-}
-.card-group > label{
-    width: 100%;
-    color: #29160F;
-    display: block;
-}
-.card-group > input{
-    outline: 0;
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    background-color: #D9D0D0;
-    border: none;
+    padding: 8px;
 }
 
-.card-group.cor {
-    color: #624e39;
-}
-
-.senha-link{
-    color: #624e39;
-}
-.senha-link:hover{
-    color: #29160F;
-}
