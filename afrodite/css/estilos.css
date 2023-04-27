@@ -133,7 +133,7 @@ body{
 }
 
 .c1{
-    color: #362b1f;
+    color: #856c52;
     font-family: "Dm Sans", sans-serif;
     font-size: 18px;
     letter-spacing: 5px;
@@ -141,12 +141,14 @@ body{
 }
 
 .c2 {
-    color: #856c52;
+    color: #624e39;
+    font-family: "Dm Sans", sans-serif;
     font-size: 18px;
     text-decoration: none;
 
 }
 
 .c2:hover{
-    color: #624e39;
+    color: #3a2e21;
 }
+
