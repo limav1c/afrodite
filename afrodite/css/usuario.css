@@ -157,9 +157,13 @@ body{
     border: none;
 }
 
+.card-group.cor {
+    color: #624e39;
+}
+
 .senha-link{
     color: #624e39;
 }
-.senha-link :hover{
-    color: #624e39;
+.senha-link:hover{
+    color: #29160F;
 }
