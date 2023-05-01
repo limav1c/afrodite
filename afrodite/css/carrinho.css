@@ -82,4 +82,57 @@ body{
 
 }
 
+.container{
+    padding: 1%;
+    margin: 1%;
+    font-family: "Higuen Elegant Serif", serif;
+    margin-left: 15%;
+    padding-left: 10%;
+}
 
+.info{
+    background-color: #F1EEEB;
+    width: 50%;
+    height: 100px;
+    padding: 15px;
+    line-height: 12px;
+    margin-left: 8%;
+    font-family: "Dream Avenue", sans-serif;
+
+}
+#imagem{
+    width: 7%;
+    border-radius: 10px;
+    float: left;
+}
+
+#texto {
+    position: absolute;
+    font-size: 50px;
+    font-family: "Dream Avenue", sans-serif;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.button{
+    margin-bottom: 15px;
+    border-radius: 50px;
+    width: 10%;
+    background-color: #826F5A;
+    padding: 15px;
+    color: white;
+    border: none;
+    margin-left: 60%;
+    font-family: "Dream Avenue", sans-serif;
+}
+
+
+.checkbox{
+    float: right;
+    position: relative;
+    margin-top: -25px;
+}
+
+.produto{
+    margin-left: 5%;
+}
