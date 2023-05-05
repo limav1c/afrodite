@@ -9,6 +9,8 @@
     src: local(Dm Sans), url(../imgs/DMSans-Medium.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
 h1 {    
     font-family: "Dream Avenue", sans-serif;
     color: #fff;
@@ -82,4 +84,28 @@ body{
 
 }
 
+h2{
+    margin-left: 9%;
+    font-family: "Dream Avenue", sans-serif;
+    color:#3a2e21;
+    font-size: 65px;
+    padding-top: 5%;
+}
+
+.quadrado{
+    margin-left: 9%;
+    margin-right: 64%;
+    height: 400px;
+    background-color: #826f5a;
+}
+
+.fonte{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    font-size: 24px;
+    padding-top: 3%;
+    text-align: justify;
+}
 
