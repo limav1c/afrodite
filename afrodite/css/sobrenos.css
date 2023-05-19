@@ -88,13 +88,13 @@ h2{
     margin-left: 9%;
     font-family: "Dream Avenue", sans-serif;
     color:#3a2e21;
-    font-size: 65px;
-    padding-top: 5%;
+    font-size: max(20px, 3.5vw);
+    padding-top: 20%;
 }
 
 .quadrado{
     margin-left: 9%;
-    margin-right: 64%;
+    margin-right: 7%;
     height: 400px;
     background-color: #826f5a;
 }
@@ -108,4 +108,3 @@ h2{
     padding-top: 3%;
     text-align: justify;
 }
-
