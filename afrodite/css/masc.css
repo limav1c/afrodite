@@ -98,7 +98,7 @@ body{
 #texto {
     position: absolute;
     padding-top: 4%;
-    font-size: max(10px, 5vw);
+    font-size: max(10px, 4vw);
     font-family: "Dream Avenue", sans-serif;
     color: #fff;
   }
