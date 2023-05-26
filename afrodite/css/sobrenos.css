@@ -108,3 +108,37 @@ h2{
     padding-top: 3%;
     text-align: justify;
 }
+
+  .alinhamento1{
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+  
+  .alinhamento2{
+    margin-left: 20%;
+
+  }
+  
+  .alinhamento3{
+    margin-left: 35%;
+  }
+  
+  
+  .altura{
+    margin-top: 10%;
+  }
+  
+
+.circulo {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #802525;
+    align-items: center;
+    font-family: sans-serif;
+    color: #d9d0d0;
+    text-align: center;
+    font-size: 50px;
+    border: none;
+  }
