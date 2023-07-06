@@ -13,6 +13,15 @@
     
     <link href="css/carrinho.css" rel="stylesheet">
 
+    <script type="text/javascript">
+      function abrir() {
+          document.getElementById('caixa').style.display = 'block';
+      }
+      function fechar(){
+          document.getElementById('caixa').style.display = 'none';
+      }
+    </script>
+
 
 </head>
 <body>
@@ -80,7 +89,7 @@
       <label class="checkbox"><input type="checkbox" name="" id="checkbox" value=""></label> 
     </div></div><br>
       
-      <button onclick="abrir()" class="button">CONTINUAR</button>
+     <a href="#" ondblclick="abrir()" onclick="fechar();" class="texto"><button type="submit" class="button">CONTINUAR</button></a>
       
       <div id="caixa" class="caixa">
         <p class="c1"> LIMITE MÁXIMO DE PEÇAS ATINGIDO</p>
