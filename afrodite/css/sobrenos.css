@@ -15,7 +15,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-h1 {    
+h1 {
     font-family: "Dream Avenue", sans-serif;
     color: #fff;
     font-size: 25px;
@@ -43,19 +43,19 @@ h1 {
 .navbar-brand {
     padding-left: 20px !important;
 }
-  
+
 .navbar {
-    position:static;
-    background: rgba(255, 255, 255, 0.25) !important; 
+    position: static;
+    background: rgba(255, 255, 255, 0.25) !important;
     top: 0;
     right: 0;
     left: 0;
 }
-  
+
 .nav-link:hover {
-    color: #624e39  !important;
+    color: #624e39 !important;
 }
-  
+
 .d-flex {
     padding-right: 40px !important;
 }
@@ -75,7 +75,7 @@ h1 {
 
 .dropdown-item {
     font-family: "Dm Sans", arial;
-    color:#fff;
+    color: #fff;
 }
 
 .dropdown-item:hover {
@@ -83,65 +83,65 @@ h1 {
     color: #3a2e21;
 }
 
-body{
+body {
     background-color: #BCAA95;
 
 }
 
-h2{
+h2 {
     margin-left: 9%;
     font-family: "Dream Avenue", sans-serif;
-    color:#3a2e21;
-    font-size: max(20px, 3.5vw);
+    color: #3a2e21;
+    font-size: max(25px, 4vw);
     padding-top: 20%;
 }
 
-.quadrado{
-    height: 400px;
-    width: 75%;
-    background-color: #826f5a;
-    margin-left: 20px;
+.texto {
+    height: 350px;
+    width: 85%;
+    background-color: #624e39;
+    margin-left: 60px;
 }
 
-.fonte{
+.fonte {
     margin-left: 2%;
     margin-right: 2%;
     font-family: 'Open Sans', sans-serif;
-    color:#fff;
-    font-size: 24px;
+    color: #fff;
+    font-size: 21px;
     padding-top: 3%;
     text-align: justify;
 }
 
-  .conteudo {
+.conteudo {
     text-align: center;
     display: flex;
-    padding: 50px;
-  }
+    padding: 30px;
+}
 
-.fotov{
-    height: 180px;
-    width: 190px;
+.fotov {
+    height: 170px;
+    width: 180px;
     border-radius: 50%;
 
 }
 
-.fotom{
+.fotom {
     height: 180px;
-    width: 190px;
+    width: 170px;
     border-radius: 50%;
 }
 
 
-.fotod{
-    height: 190px;
-    width: 190px;
+.fotod {
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
 }
 
-.fotok{
+.fotok {
     height: 180px;
-    width: 190px;
+    width: 170px;
     border-radius: 50%;
 }
 
@@ -149,17 +149,11 @@ h2{
     height: 500px;
     float: right;
     width: 500px;
-    display: flexbox;
-    margin-right: 150px;
-    margin-top: 100px;
-    
-  }
-
-
-.imagemArrumada {
-    margin: 10px;
+    margin-top: 80px;
+    margin-left: 10%;
 }
 
-figcaption{
+figcaption {
     font-family: "Dm Sans", Arial;
+    font-size: small;
 }
