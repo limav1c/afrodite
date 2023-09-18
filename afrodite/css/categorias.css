@@ -265,3 +265,11 @@ img {
     grid-column: span 2;
     margin-bottom: 10px;
 }
+
+p{
+    text-align: center;
+    color: #3a2e21;
+    font-size: 40px;
+    font-family: "Dream Avenue", sans-serif;
+    padding-top: 10%;
+}
