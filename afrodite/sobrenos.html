@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Afrodite</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="icon" href="imgs/cabide1.png">
+
+  <link href="css/sobrenos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+
+      <div class="container-fluid">
+
+        <div class="oval"><a class="navbar-brand" href="index.html">
+            <h1>AFRODITE</h1>
+          </a></div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse justify-content-sm-end dois" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"
+                style="color: #fff;">Categorias</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="feminino.html">Moda Feminina</a>
+                <a class="dropdown-item" href="masculino.html">Moda Masculina</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" style="color: #fff;" href="sobrenos.html">Sobre Nós</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="d-flex" role="search">
+        <a href="login.html"><img src="imgs/pessoa.png" height=40 class="nav-link active um" aria-current="page"></a>
+      </form>
+
+      <form class="d-flex" role="search">
+        <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois"
+            aria-current="page"></a>
+      </form>
+
+    </nav>
+
+  </header>
+
+
+  <div class="conteudo">
+    <div style="width: 40%">
+      <h2>SOBRE AFRODITE</h2>
+      <div class="texto">
+        <p class="fonte">Somos um bazar beneficente online onde os usuários podem receber peças de roupas doadas e,
+          também, doar roupas, com o intuito de beneficiar o próximo. A ideia do bazar surgiu aleatoriamente em uma aula
+          de Banco de dados no 2° ano. Posteriormente, usamos o nome "Afrodite" inspirado na Deusa Grega da beleza,
+          representando a feminilidade das quatro criadoras (Vic, Mariana, Kely e Madu). </p>
+      </div>
+    </div>
+
+      <div class="apresentacao">
+        <div style="float: left;">
+          <figure>
+            <img src="imgs/vic.jpg" class="fotov">
+            <figcaption>vic <br> vl00669@gmail.com</figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/mari.jpg" class="fotom">
+            <figcaption>mari <br> marianaguilande2005@gmail.com </figcaption>
+          </figure>
+        </div>
+          <figure>
+            <img src="imgs/madu.jpg" class="fotod">
+            <figcaption>madu <br> co-criadora</figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/kely.jpg" class="fotok">
+            <figcaption>kely <br> giovanablmelo@gmail.com</figcaption>
+          </figure>
+        </div>
+      </div>
+
+  </div>
+
+</body>
+
+</html>

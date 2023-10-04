@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Afrodite</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <link rel="icon" href="imgs/cabide1.png">
+    
+    <link href="css/usuario.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+
+          <div class="container-fluid">
+                
+            <div class="oval"><a class="navbar-brand" href="index.html"><h1>AFRODITE</h1></a></div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="navbar-collapse justify-content-sm-end dois" id="navbarNav">
+              <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"style="color: #fff;">Categorias</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="feminino.html">Moda Feminina</a>
+                    <a class="dropdown-item" href="masculino.html">Moda Masculina</a>
+                  </div>
+                </li>
+  
+                <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" style="color: #fff;" href="sobrenos.html">Sobre Nós</a>
+                 </li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="d-flex" role="search">
+            <a href="login.html"><img src="imgs/pessoa.png"  height=40 class="nav-link active um" aria-current="page"></a>
+          </form>
+
+          <form class="d-flex" role="search">
+            <a href="carrinho.html"><img src="imgs/carrinho.png"  height=40 class="nav-link active dois" aria-current="page"></a>
+          </form>
+
+    </nav>
+  </header>
+  <form class="form" action="#">
+    <div class="card">
+      <div class="card-group">
+        <label>Nome</label>
+        <input type="text" class="nome" id="nome" name="nome" required>
+      </div>
+      <div class="card-group">
+        <label>Email</label>
+        <input type="email" class="email" id="email" name="email" required>
+      </div>
+      <div class="card-group">
+        <label>Crie uma senha</label>
+        <input type="password" class="senha" id="senha" name="senha" required>
+      </div>
+      <div class="card-group">
+        <label>Repita a senha</label>
+        <input type="password" class="senha" id="senha" name="senha" required>
+      </div>
+      <div class="card-group">
+        <button type="submit" class="button">Cadastrar</button>
+      </div>
+    </div></form> 
+  
+    </body>
+</html>
