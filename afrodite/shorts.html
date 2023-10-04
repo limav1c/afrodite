@@ -23,17 +23,17 @@
 </head>
 
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   <header>
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-      </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
     <nav class="navbar navbar-expand-lg bg-light">
 
       <div class="container-fluid">
@@ -73,6 +73,8 @@
       <form class="d-flex" role="search">
         <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois"
             aria-current="page"></a>
+        <span class="badge text-bg-secondary" id="numero_carrinho"></span>
+
       </form>
 
     </nav>
@@ -89,7 +91,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short1fem.jpg" class="product-thumb" alt="">
-          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a></a>
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_44">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Jeans Claro</h2>
@@ -100,7 +102,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short2fem.jpg" class="product-thumb" alt="">
-          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a></a>
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_45">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Básico</h2>
@@ -111,7 +113,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short3fem.jpg" class="product-thumb" alt="">
-          <a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a>
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_46">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Esportivo</h2>
@@ -122,7 +124,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short4fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Couro</h2>
@@ -133,7 +134,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short5fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a>
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_48">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Jeans Escuro</h2>
@@ -144,7 +145,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short6fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Jeans Preto</h2>
@@ -155,7 +155,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short7fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Conjunto Florido</h2>
@@ -166,7 +165,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short8fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a>
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_51">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Jeans Claro</h2>
@@ -177,7 +176,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/short9fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a>
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_52">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Azul</h2>
@@ -190,6 +189,8 @@
   </section>
 
   <script src="js/script.js"></script>
+  <script src="js/meuscript.js"></script>
+
 </body>
 
 </html>

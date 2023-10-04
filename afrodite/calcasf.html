@@ -23,17 +23,17 @@
 </head>
 
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   <header>
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-      </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
     <nav class="navbar navbar-expand-lg bg-light">
 
       <div class="container-fluid">
@@ -73,6 +73,8 @@
       <form class="d-flex" role="search">
         <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois"
             aria-current="page"></a>
+        <span class="badge text-bg-secondary" id="numero_carrinho"></span>
+
       </form>
 
     </nav>
@@ -89,29 +91,27 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/calca1fem.jpg" class="product-thumb" alt="">
-          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a></a>
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_33">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Moletom Preto</h2>
-          <p class="product-short-description">Tamanho: 36, Usada</p>
+          <p class="product-short-description">Situação: Seminovo</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/calca2fem.jpg" class="product-thumb" alt="">
-          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Jeans Rasgada</h2>
-          <p class="product-short-description">Tamanho: 36, Usada</p>
+          <p class="product-short-description">Situação: Seminovo</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/calca3fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Jeans Rasgada</h2>
@@ -122,7 +122,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/calca4fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a></a>
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_36">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Jeans</h2>
@@ -133,18 +133,64 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/calca5fem.png" class="product-thumb" alt="">
-          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn">Adicionar ao carrinho</button></a></a>
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_37">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
-          <h2 class="product-brand">Esportiva</h2>
+          <h2 class="product-brand">Calça</h2>
           <p class="product-short-description">Tamanho: 34, Seminovo</p>
         </div>
       </div>
 
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imgs/calca6fem.png" class="product-thumb" alt="">
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_38">Adicionar ao carrinho</button></a></a>
+        </div>
+        <div class="product-info">
+          <h2 class="product-brand">Calça</h2>
+          <p class="product-short-description">Tamanho: 34, Seminovo</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imgs/calca7fem.png" class="product-thumb" alt="">
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_39">Adicionar ao carrinho</button></a></a>
+        </div>
+        <div class="product-info">
+          <h2 class="product-brand">Calça</h2>
+          <p class="product-short-description">Tamanho: 34, Seminovo</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imgs/calca8fem.png" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+          <h2 class="product-brand">Calça</h2>
+          <p class="product-short-description">Tamanho: 34, Seminovo</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imgs/calca9fem.png" class="product-thumb" alt="">
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_41">Adicionar ao carrinho</button></a></a>
+        </div>
+        <div class="product-info">
+          <h2 class="product-brand">Calça</h2>
+          <p class="product-short-description">Tamanho: 34, Seminovo</p>
+        </div>
+      </div>
+
+
     </div>
   </section>
 
+  <script src="js/meuscript.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

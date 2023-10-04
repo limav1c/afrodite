@@ -23,17 +23,17 @@
 </head>
 
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   <header>
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-      </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
     <nav class="navbar navbar-expand-lg bg-light">
 
       <div class="container-fluid">
@@ -73,6 +73,8 @@
       <form class="d-flex" role="search">
         <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois"
             aria-current="page"></a>
+        <span class="badge text-bg-secondary" id="numero_carrinho"></span>
+
       </form>
 
     </nav>
@@ -82,6 +84,8 @@
   <p class="sem_peca">Ooops! não há peças disponíveis.</p>
 
   <script src="js/script.js"></script>
+  <script src="js/meuscript.js"></script>
+
 </body>
 
 </html>

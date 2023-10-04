@@ -18,7 +18,6 @@
   <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 
-
   <link rel="icon" href="imgs/cabide1.png">
 
   <link href="css/categorias.css" rel="stylesheet">
@@ -26,6 +25,16 @@
 </head>
 
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
 
@@ -64,8 +73,9 @@
       </form>
 
       <form class="d-flex" role="search">
-        <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois"
+        <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois" id="img_carrinho"
             aria-current="page"></a>
+        <span class="badge text-bg-secondary" id="numero_carrinho"></span>
       </form>
 
     </nav>
@@ -81,107 +91,105 @@
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa1.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a></a>
+          <img src="imgs/blusa1fem.jpg" class="product-thumb" alt="">
         </div>
         <div class="product-info">
-          <h2 class="product-brand">Top Preto</h2>
-          <p class="product-short-description">Tamanho: M, Usada</p>
+          <h2 class="product-brand">Top</h2>
+          <p class="product-short-description">Situação: Seminovo</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa2.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a></a>
+          <img src="imgs/blusa2fem.jpg" class="product-thumb" alt="">
         </div>
         <div class="product-info">
           <h2 class="product-brand">Regata Esportiva</h2>
-          <p class="product-short-description">Tamanho: M, Usada</p>
+          <p class="product-short-description">Situação: Seminovo</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa3.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <img src="imgs/blusa3fem.jpg" class="product-thumb" alt="">
+          <a href="carrinho.html"></a><button class="card-btn btn_adicionar" id="btn_3">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Beagle</h2>
-          <p class="product-short-description">Tamanho: P, Seminovo</p>
+          <p class="product-short-description">Situação: Seminovo</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa4.jpg" class="product-thumb" alt="">
-          <a ><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <img src="imgs/blusa4fem.jpg" class="product-thumb" alt="">
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_4">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Pijama</h2>
-          <p class="product-short-description">Tamanho: P, Usada</p>
+          <p class="product-short-description">Situação: Seminovo</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa5.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <img src="imgs/blusa5fem.jpg" class="product-thumb" alt="">
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Queen</h2>
-          <p class="product-short-description">Tamanho: P, Usada</p>
+          <p class="product-short-description">Situação: Pouco degastada</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa6.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <img src="imgs/blusa6fem.jpg" class="product-thumb" alt="">
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_6">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Girassol</h2>
-          <p class="product-short-description">Tamanho: P, Usada</p>
+          <p class="product-short-description">Situação: Seminovo</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa7.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <img src="imgs/blusa7fem.jpg" class="product-thumb" alt="">
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_7">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Harry Potter</h2>
-          <p class="product-short-description">Tamanho: P, Usada</p>
+          <p class="product-short-description">Situação: Pouco degastada</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa8.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <img src="imgs/blusa8fem.jpg" class="product-thumb" alt="">
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_8">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Preta</h2>
-          <p class="product-short-description">Tamanho: P, Usada</p>
+          <p class="product-short-description">Situação: Pouco Degastada</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
-          <img src="imgs/blusa9.jpg" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <img src="imgs/blusa9fem.jpg" class="product-thumb" alt="">
+          <a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_9">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Regata Preta</h2>
-          <p class="product-short-description">Tamanho: G, Usada</p>
+          <p class="product-short-description">Pouco degastada</p>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa10.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_10">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Florida</h2>
@@ -192,7 +200,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa11.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Cropped Love</h2>
@@ -203,7 +210,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa12.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Cropped Preto</h2>
@@ -214,7 +220,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa13.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Cropped Preto</h2>
@@ -225,7 +230,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa14.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_14">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Branca</h2>
@@ -236,7 +241,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa15.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_15">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Estampada</h2>
@@ -247,7 +252,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa16.png" class="product-thumb" alt="">
-          <a ><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a ><button class="card-btn btn_adicionar" id="btn_16">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Cropped Nude</h2>
@@ -258,7 +263,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa17.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_17">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa DC</h2>
@@ -269,7 +274,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa18.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_18">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Cinza</h2>
@@ -280,7 +285,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa19.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_19">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Cinza</h2>
@@ -291,7 +296,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa20.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Inverno</h2>
@@ -302,7 +306,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa21.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_21">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Esportivo</h2>
@@ -313,7 +317,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa22.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_22">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Florida</h2>
@@ -324,7 +328,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa23.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_23">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Cinza</h2>
@@ -335,7 +339,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa24.png" class="product-thumb" alt="">
-          <a ><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a ><button class="card-btn btn_adicionar" id="btn_24">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Rock</h2>
@@ -346,7 +350,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa25.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_25">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Preta de Renda</h2>
@@ -357,7 +361,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa26.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_26">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Listrada</h2>
@@ -368,7 +372,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa27.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_27">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Love</h2>
@@ -379,7 +383,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa28.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_28">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Estampada</h2>
@@ -390,7 +394,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa29.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_29">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Florida</h2>
@@ -401,7 +405,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa30.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
+          <a><button class="card-btn btn_adicionar" id="btn_30">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Básica</h2>
@@ -412,7 +416,6 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa31.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Cropped Branco</h2>
@@ -423,11 +426,32 @@
       <div class="product-card">
         <div class="product-image">
           <img src="imgs/blusa32.png" class="product-thumb" alt="">
-          <a><button class="card-btn btn_adicionar" id="btn_5">Adicionar ao carrinho</button></a>
         </div>
         <div class="product-info">
           <h2 class="product-brand">Blusa Preta</h2>
           <p class="product-short-description">Tamanho: P, Usada</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imgs/blusa33.jpeg" class="product-thumb" alt="">
+          <a><button class="card-btn btn_adicionar" id="btn_68">Adicionar ao carrinho</button></a>
+        </div>
+        <div class="product-info">
+          <h2 class="product-brand">Básica</h2>
+          <p class="product-short-description">Tamanho: M, Usada</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imgs/blusa34.jpeg" class="product-thumb" alt="">
+          <a><button class="card-btn btn_adicionar" id="btn_69">Adicionar ao carrinho</button></a>
+        </div>
+        <div class="product-info">
+          <h2 class="product-brand">Básica</h2>
+          <p class="product-short-description">Tamanho: M, Usada</p>
         </div>
       </div>
 
@@ -440,8 +464,8 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-  <script src="js/meuscript.js"></script>
-  <script src="js/script.js"></script>
+    <script src="js/meuscript.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -23,6 +23,16 @@
 </head>
 
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
 
@@ -63,15 +73,38 @@
       <form class="d-flex" role="search">
         <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois"
             aria-current="page"></a>
+        <span class="badge text-bg-secondary" id="numero_carrinho"></span>
+
       </form>
 
     </nav>
 
   </header>
 
-  <p class="sem_peca">Ooops! não há peças disponíveis.</p>
+  <section class="product">
+
+    <button class="pre-btn"><img src="imgs/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="imgs/arrow.png" alt=""></button>
+
+    <div class="product-container">
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imgs/casaco.jpeg" class="product-thumb" alt="">
+          <a href="carrinho.html"><a href="carrinho.html"><button class="card-btn btn_adicionar" id="btn_67">Adicionar ao carrinho</button></a></a>
+        </div>
+        <div class="product-info">
+          <h2 class="product-brand">Militar</h2>
+          <p class="product-short-description">Situação: Usada</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <script src="js/script.js"></script>
+  <script src="js/meuscript.js"></script>
+
 </body>
 
 </html>
