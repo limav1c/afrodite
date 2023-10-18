@@ -135,6 +135,12 @@ body{
 
 .produto{
     margin-left: 5%;
+    background-color: #F1EEEB;
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    line-height: 15px;
+    font-family: "Higuen Elegant Serif", serif;
 }
 
 .texto{
