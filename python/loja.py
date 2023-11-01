@@ -134,7 +134,10 @@ def finalizar():
         return jsonify({"resultado": "erro", "detalhes": str(e)})
 
     # retira os produtos comprados(saida=True) - sql update para atualizar a saida dos produtos da compra
+    saida = true
     # for dos ids de saida
+    for id in saida:
+    # produto que tem esse id na tabela de produtos não exibir ele mais
     # responde a requisicao
     '''
 
