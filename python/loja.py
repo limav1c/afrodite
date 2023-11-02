@@ -6,6 +6,7 @@ from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 import os
+import datetime
 
 #
 # VARIÁVEIS E CONFIGURAÇÕES
@@ -15,7 +16,7 @@ app = Flask(__name__)
 
 # configurações específicas para o SQLite
 caminho = os.path.dirname(os.path.abspath(__file__))
-arquivobd = os.path.join(caminho, 'pessoas.db')
+arquivobd = os.path.join(caminho, 'afrodite.db')
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///" + arquivobd
 
 db = SQLAlchemy(app)
@@ -115,31 +116,44 @@ def remover_do_carrinho(produto_id):
     # Lógica para remover o produto do carrinho no banco de dados
     return jsonify({'mensagem': 'Produto removido do carrinho'})
 
-'''@app.route('/finalizar')
+# curl -d '{"info":"doação em 02/11/2023, para Hylson", produtos_ids="1,3,5"} -H "Content-Type:application/json" localhost:5000/finalizar
+@app.route('/finalizar', methods=['POST'])
 def finalizar():
     # receber os dados da requisicao(lista de produtos e informacoes sobre a compra) - olhar rota de incluir
     ## receber as informações do novo objeto
     dados = request.get_json()  
     try:
         #criar compra com os dados recebidos
-        nova = Compra(**dados)
-        
-        # persiste a compra
-        db.session.add(nova)  # adicionar no BD
-        db.session.commit()  # efetivar a operação de gravação
+        nova = Compra()
+        nova.info = dados['info']
+       
+        # quebrar a lista de id dos produtos (essa informação vem do carrinho de compras)
+        ids = dados['produtos_ids'].split(",")
+        # adicionar os produtos
+        for id in ids:
+            # obtém o produto
+            prod = db.session.get(Produto, id)
+            # marca que esse produto foi doado :-)
+            prod.saida = True
+            # atualiza o produto
+            db.session.add(prod)
+            db.session.commit()
+
+            # adiciona o produto na compra
+            nova.produtos.append(prod)
+                    
+        # salva a compra :-)
+        db.session.add(nova)
+        db.session.commit()
+
+        # responde a requisicao
         # retorno de sucesso :-)
         return jsonify({"resultado": "ok", "detalhes": "ok"})
     except Exception as e:  # em caso de erro...
         # informar mensagem de erro :-(
         return jsonify({"resultado": "erro", "detalhes": str(e)})
-
-    # retira os produtos comprados(saida=True) - sql update para atualizar a saida dos produtos da compra
-    saida = true
-    # for dos ids de saida
-    for id in saida:
-    # produto que tem esse id na tabela de produtos não exibir ele mais
-    # responde a requisicao
-    '''
+    
+    
 
 if __name__ == '__main__':
     with app.app_context():
