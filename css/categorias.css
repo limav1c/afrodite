@@ -273,3 +273,7 @@ img {
     font-family: "Dream Avenue", sans-serif;
     padding-top: 10%;
 }
+
+.meu_link_hover:hover{
+    background-color:yellow;
+    }
