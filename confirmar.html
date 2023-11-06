@@ -73,8 +73,50 @@
       <p> 12:00 as 13:30! </p>
     </div><br>
   </div>
-  <a href="finalizar.html"><button type="submit" class="button">FINALIZAR</button></a>
-  
+  <button type="submit" class="button" id="btFinalizar">FINALIZAR</button>
+  <script>
+    $(function () {
+
+
+      // clique do botao
+      $(document).on("click", "#btFinalizar", function () {
+
+        // 1) Pedir ao backend os produtos daquela categoria
+
+        var carrinho = sessionStorage.getItem('carrinho');
+
+
+
+        var dados_json = JSON.stringify({ info: "finalizando a venda", produtos_ids: carrinho });
+        var rota = 'http://localhost:5000/finalizar/' + categ;
+        // chamada ajax
+        var acao = $.ajax({
+                    url: rota,
+                    method: 'POST',
+                    dataType: 'json', // os dados são recebidos no formato json,
+                    contentType: 'application/json', // os dados serão enviados em json
+                    data: dados_json
+                });
+
+        // Se a chamada der certo
+        acao.done(function (dados) {
+          if (dados.resultado == 'ok') {
+
+            window.location="confirmar.html";
+
+          } else {
+            alert("ERRO em confirmar :-/"+ dados.detalhes);
+          }
+        });
+
+        // Se a chamada der erro
+        acao.fail(function () {
+          alert("Ocorreu algum erro na chamada ajax");
+        });
+      });
+
+    });
+  </script>
 
 </body>
 </html>
