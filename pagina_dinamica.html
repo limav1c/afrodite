@@ -556,6 +556,9 @@
             // percorrer os resultados
             for (var p of dados.detalhes) {
 
+              //console.log(p.saida);
+              if (p.saida == false){
+
               // Monta o esquema de um produto
               var template = `
                 <div class="product-card">
@@ -570,7 +573,7 @@
                 </div>`;
 
               // Adiciona o template preenchido na div
-              $('#listagem').append(template);
+              $('#listagem').append(template);}
             }
           } else {
             alert("ERRO na busca pelos dados :-/");
