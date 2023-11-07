@@ -46,9 +46,12 @@
 
           <div>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <span id="vestido" class="atualizar_listagem meu_link_hover"><b>Vestidos</b></span> |
             <span id="blusa" class="atualizar_listagem meu_link_hover"><b>Blusas</b></span> |
+            <span id="short" class="atualizar_listagem meu_link_hover"><b>Shorts</b></span> |
             <span id="calça" class="atualizar_listagem meu_link_hover"><b>Calças</b></span> |
-            <span id="moletom" class="atualizar_listagem meu_link_hover"><b>Moletom</b></span>
+            <span id="moletom" class="atualizar_listagem meu_link_hover"><b>Moletons</b></span> |
+            <span id="saia" class="atualizar_listagem meu_link_hover"><b>Saias</b></span>
             
           </div>
 
@@ -545,8 +548,13 @@
   
           $("#listagem").empty(); // limpa a listagem
           listar_generico_por_categoria(id); // mostra os itens
-          $("#filtro").text(descricao);  // mostra a descrição
+          //$("#filtro").text(descricao);  // mostra a descrição
         });
+
+        $("#listagem").empty(); // limpa a listagem
+        listar_generico_por_categoria("blusa"); // mostra os itens
+        
+
   
       });
     </script>
