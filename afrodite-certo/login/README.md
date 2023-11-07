@@ -1,1 +1,0 @@
-# https://flask-jwt-extended.readthedocs.io/en/stable/installation/
