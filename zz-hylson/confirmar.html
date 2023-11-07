@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Afrodite</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="icon" href="imgs/cabide1.png">
+
+  <link href="css/confirmar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+
+      <div class="container-fluid">
+
+        <div class="oval"><a class="navbar-brand" href="index.html">
+            <h1>AFRODITE</h1>
+          </a></div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse justify-content-sm-end dois" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"
+                style="color: #fff;">Categorias</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="feminino.html">Moda Feminina</a>
+                <a class="dropdown-item" href="masculino.html">Moda Masculina</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" style="color: #fff;" href="sobrenos.html">Sobre Nós</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="d-flex" role="search">
+        <a href="login.html"><img src="imgs/pessoa.png" height=40 class="nav-link active um" aria-current="page"></a>
+      </form>
+
+      <form class="d-flex" role="search">
+        <a href="carrinho.html"><img src="imgs/carrinho.png" height=40 class="nav-link active dois"
+            aria-current="page"></a>
+      </form>
+
+    </nav>
+
+  </header>
+
+  <!--novo-->
+  <div class="container">
+    <img id="image" src="imgs/carrinho.png" title="foto carrinho">
+    <label id="texto">CONFIRMAÇÃO DO PEDIDO</label>
+  </div>
+
+  <div class="container">
+    <div class="endereco">
+      <p>ENDEREÇO E HORÁRIO PARA RETIRADA: </p>
+    </div>
+    <div class="info">
+      <p> Endereço: R. Bernardino José de Oliveira, 81 </p>
+      <p> Badenfurt, Blumenau - SC, 89070-270 </p>
+      <p> 12:00 as 13:30! </p>
+    </div><br>
+  </div>
+  <button class="button" id="btFinalizar" onclick="return false;">FINALIZAR</button>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/meuscript.js"></script>
+
+  <script>
+    $(function () {
+
+      // clique do botao
+      $(document).on("click", "#btFinalizar", function () {
+
+        // obter o carrinho
+        var carrinho = sessionStorage.getItem('carrinho');
+
+        // preparar os dados
+        var dados_json = JSON.stringify({ info: "finalizando a venda", produtos_ids: carrinho });
+
+        // definir rota
+
+        var rota = 'http://localhost:5000/finalizar';
+
+        // fazer chamada ajax
+        var acao = $.ajax({
+          url: rota,
+          method: 'POST',
+          dataType: 'json', // os dados são recebidos no formato json,
+          contentType: 'application/json', // os dados serão enviados em json
+          data: dados_json
+        });
+
+        // Se a chamada der certo
+        acao.done(function (dados) {
+          if (dados.resultado == 'ok') {
+
+            // alert temporário
+            //alert("Operação finalizada :-)");
+
+            // esvaziar o carrinho
+            sessionStorage.setItem('carrinho',""); 
+
+            // informar que deu tudo certo
+            window.location.href = "finalizar.html";
+
+          } else {
+            alert("ERRO em confirmar :-/" + dados.detalhes);
+          }
+        });
+
+        // Se a chamada der erro
+        acao.fail(function () {
+          alert("Ocorreu algum erro na chamada ajax");
+        });
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
