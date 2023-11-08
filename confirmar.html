@@ -13,6 +13,7 @@
     
     <link href="css/confirmar.css" rel="stylesheet">
 
+    <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
 <body>
@@ -73,9 +74,61 @@
       <p> 12:00 as 13:30! </p>
     </div><br>
   </div>
-  <a href="finalizar.html"><button type="submit" class="button">FINALIZAR</button></a>
-  <!--quando a pessoa apertar em finalizar colocar o atributo saida como true-->
+  <button class="button" id="btFinalizar">FINALIZAR</button>
+  <!--quando a pessoa apertar em finalizar colocar o atributo saida como true
+  isso será feito pela rota finalizar do backend -->
   
+<script>
+  $(function () {
+
+    // clique do botao
+    $(document).on("click", "#btFinalizar", function () {
+
+      // obter o carrinho
+      var carrinho = sessionStorage.getItem('carrinho');
+
+      // preparar os dados
+      var dados_json = JSON.stringify({ info: "finalizando a venda", produtos_ids: carrinho });
+
+      // definir rota
+
+      var rota = 'http://localhost:5000/finalizar';
+
+      // fazer chamada ajax
+      var acao = $.ajax({
+        url: rota,
+        method: 'POST',
+        dataType: 'json', // os dados são recebidos no formato json,
+        contentType: 'application/json', // os dados serão enviados em json
+        data: dados_json
+      });
+
+      // Se a chamada der certo
+      acao.done(function (dados) {
+        if (dados.resultado == 'ok') {
+
+          // alert temporário
+          //alert("Operação finalizada :-)");
+
+          // esvaziar o carrinho
+          sessionStorage.setItem('carrinho',""); 
+
+          // informar que deu tudo certo
+          window.location.href = "finalizar.html";
+
+        } else {
+          alert("ERRO em confirmar :-/" + dados.detalhes);
+        }
+      });
+
+      // Se a chamada der erro
+      acao.fail(function () {
+        alert("Ocorreu algum erro na chamada ajax");
+      });
+    });
+
+  });
+</script>
 
 </body>
 </html>
