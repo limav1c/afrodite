@@ -183,7 +183,7 @@ def salvar_imagem():
         #print("comecando")
         file_val = request.files['foto']
         #print("vou salvar em: "+file_val.filename)
-        arquivoimg = os.path.join(caminho, 'imagens/'+file_val.filename)
+        arquivoimg = os.path.join(caminho, 'imgs/'+file_val.filename)
         file_val.save(arquivoimg)
         r = jsonify({"resultado":"ok", "detalhes": file_val.filename})
     except Exception as e:

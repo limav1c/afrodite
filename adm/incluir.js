@@ -31,7 +31,6 @@ $(function () {
             descricao = $("#campoDescricao").val();
             situacao = $("#campoSituacao").val();
             cor = $("#campoCor").val();
-            saida = $("#campoSaida").val();
 
             // C:\\fakepath\\olho.jpg"
             // esse fakepath vem de algum lugar da biblioteca utilizada
@@ -39,7 +38,7 @@ $(function () {
             nome_imagem = $("#campoFoto").val().substr(12);
 
             // preparar dados no formato json
-            var dados = JSON.stringify({ descricao: descricao, situacao: situacao, cor: cor, nome_imagem: nome_imagem, saida: saida });
+            var dados = JSON.stringify({ descricao: descricao, situacao: situacao, cor: cor, nome_imagem: nome_imagem });
             // fazer requisição para o back-end
             $.ajax({
                 url: 'http://localhost:5000/incluir_produto',
@@ -57,7 +56,6 @@ $(function () {
                     $("#campoDescricao").val();
                     $("#campoSituacao").val();
                     $("#campoCor").val();
-                    $("#campoSaida").val();
                 } else {
                     // informar mensagem de erro
                     alert(retorno.resultado + ":" + retorno.detalhes);
