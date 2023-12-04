@@ -191,11 +191,11 @@ def salvar_imagem():
 
     return r
 
-@app.route('/get_image/<int:id_pessoa>')
+@app.route('/get_image/<int:id_produto>')
 def get_image(id_produto):
-    # livro = db.session.query(Pessoa).get(id_pessoa) VERSÃO OBSOLETA!!!
+    # livro = db.session.query(Pessoa).get(id_produto) VERSÃO OBSOLETA!!!
     p = db.session.get(Produto, id_produto)
-    completo = os.path.join(caminho, 'imagens/'+ p.nome_imagem)
+    completo = os.path.join(caminho, 'imgs/'+ p.nome_imagem)
     return send_file(completo, mimetype='image/gif')
        
 @app.route("/incluir_produto", methods=['post'])

@@ -24,6 +24,8 @@ $(function () {
                            <td>${produtos[i].descricao}</td>
                            <td>${produtos[i].situacao}</td>
                            <td><img src="http://localhost:5000/get_image/${produtos[i].id}" height=100 width=100></td>
+                           <td>${produtos[i].cor}</td>
+                           <td>${produtos[i].saida}</td>
                            </tr>`;
                     // adiciona a linha no corpo da tabela
                     $('#corpoTabelaProdutos').append(lin);
